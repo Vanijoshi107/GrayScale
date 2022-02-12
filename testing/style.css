@@ -1,0 +1,27 @@
+body{
+    background: linear-gradient(120deg, #ffd1fc, #fad0c6)
+}
+.container{
+    text-align: center;
+    /* border: 2px solid red; */
+    max-width: 1200px;
+    margin: auto;
+    width:50% ;
+}
+canvas {
+    background-color: #fff;
+    height: 250px;
+    border: 1px solid black;
+}
+
+
+input,button{
+    font-size: 14pt;
+    padding: .5rem;
+}
+
+
+
+input:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var canvas = document.getElementById('canvas')
+var input = document.getElementById('input')
+var c2d = canvas.getContext('2d')
+
+input.onchange=function() {
+    var img = new Image()
+    img.onload = function() {
+        canvas.width = this.width
+        canvas.height = this.height
+        c2d.drawImage(this, 0, 0)
+        URL.revokeObjectURL(this.src)
+    }
+    img.src = URL.createObjectURL(this.files[0])
+}
+
+    </script>
+</head>
+<body>
+    <input type=file id=input> <br>
+<canvas id=canvas></canvas>
+    
+</body>
+</html>

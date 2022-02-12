@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1> Upload and display image </h1>
+
+        <canvas id="can"> </canvas>
+        <p>
+            <input type="file" multiple="false" accept="image/*" id="fin" onchange="upload()">
+            <input type="button" id="gray" value="Make gray" onclick="makegray()">
+            <button id="download">Download</button>
+        </p>
+    </div>
+</body>
+<script src="js.js"></script>
+
+</html>
